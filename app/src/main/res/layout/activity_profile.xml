@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:background="@color/bg_dashboard"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".42"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="User Name:" />
+                <com.app.furnitureworld.custom.CEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_36sdp"
+                    android:background="@drawable/bg_fields"
+                    android:imeOptions="actionNext"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:textColorHint="@color/black"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:textSize="@dimen/_11ssp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".42"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Date of Birth:" />
+                <com.app.furnitureworld.custom.CEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_36sdp"
+                    android:background="@drawable/bg_fields"
+                    android:imeOptions="actionNext"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:textColorHint="@color/black"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:textSize="@dimen/_11ssp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".42"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Gender:" />
+                <com.app.furnitureworld.custom.CEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_36sdp"
+                    android:background="@drawable/bg_fields"
+                    android:imeOptions="actionNext"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:textColorHint="@color/black"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:textSize="@dimen/_11ssp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".42"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_11sdp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:text="Address:" />
+                <com.app.furnitureworld.custom.CEditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_36sdp"
+                    android:background="@drawable/bg_fields"
+                    android:imeOptions="actionNext"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:textColorHint="@color/black"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:textSize="@dimen/_11ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="#a790ef"
+                    android:gravity="center"
+                    android:text="Update Profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="#a790ef"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="@string/profile_page" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_image"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/ic_upload"/>
+    <TextView
+        android:id="@+id/tv_upload_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_13sdp"
+        android:layout_below="@+id/iv_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:text="Upload Profile Photo" />
+
+
+</RelativeLayout>
