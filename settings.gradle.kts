@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ShoppingCart"
+rootProject.name = "Furniture World"
 include(":app")
  

@@ -1,18 +1,3 @@
 <resources>
-    <string name="app_name">FurnitureWorld</string>
-    <string name="enter_full_name">Enter Full Name</string>
-    <string name="enter_email_address">Enter Email Address</string>
-    <string name="enter_password">Enter Password</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="already_have_an_account">Already Have an Account?</string>
-    <string name="register">Register</string>
-    <string name="welcome_back">Welcome Back</string>
-    <string name="welcome_back_to_furniture_world">Welcome Back to Furniture World</string>
-    <string name="post_furniture_details">Post Furniture Details</string>
-    <string name="browse_posted_items">Browse Posted Items</string>
-    <string name="click_to_post">Click to Post</string>
-    <string name="order_history">Order History</string>
-    <string name="order_history_page">Order History Page</string>
-    <string name="profile_page">Profile Page</string>
-    <string name="profile">Profile</string>
+    <string name="app_name">Furniture World</string>
 </resources>

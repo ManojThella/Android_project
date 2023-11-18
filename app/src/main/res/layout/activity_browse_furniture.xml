@@ -1,0 +1,23 @@
+<!-- res/layout/activity_furniture_list.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- RecyclerView to display the list of furniture items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/addFurnitureButton" />
+
+    <!-- Button to add new furniture items -->
+    <Button
+        android:id="@+id/addFurnitureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Add Furniture" />
+
+</RelativeLayout>

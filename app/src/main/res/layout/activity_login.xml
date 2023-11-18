@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- App Logo or Title (You can replace this with your own logo or title) -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Back"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp" />
+
+    <ImageView
+        android:layout_width="342dp"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:contentDescription="App Logo"
+        android:src="@drawable/app_logo" />
+
+    <EditText
+        android:id="@+id/usernameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/LoginBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/registerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Don't have an account? Register here" />
+
+</LinearLayout>

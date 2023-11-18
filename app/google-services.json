@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "579915060077",
+    "project_id": "furniture-world-55398",
+    "storage_bucket": "furniture-world-55398.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:579915060077:android:851c9e57bb58b1c4860064",
+        "android_client_info": {
+          "package_name": "com.example.furnitureworld"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfneDYbNVCdpeatoqXgonBhCZLJTb901Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

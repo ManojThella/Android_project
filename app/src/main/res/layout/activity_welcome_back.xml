@@ -4,104 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WelcomeBack">
+    tools:context=".WelcomeBackActivity">
+
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/titleTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome Back"
+        android:text="Welcome back to Furniture World"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.201" />
 
-    <EditText
-        android:id="@+id/confirmEmailET"
+    <Button
+        android:id="@+id/postButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter Email Address"
-        android:inputType="textEmailAddress"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="32dp"
+        android:text="Post Furniture Details"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.306" />
-
-    <EditText
-        android:id="@+id/PasswordET"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmEmailET"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.368" />
 
     <Button
-        android:id="@+id/ForgetBTN"
+        android:id="@+id/browseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="91dp"
-        android:text="Forget Password"
+        android:layout_below="@id/postButton"
+        android:text="Browse Posted Items"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PasswordET"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
-    <Button
-        android:id="@+id/signInBTN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:onClick="onClickSignIn"
-        android:text="Sign In"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ForgetBTN"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/SignUpTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="33dp"
-
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="80dp"
-        android:text="Don't Have an Account?"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/SignUpBTN"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signInBTN" />
-
-    <Button
-        android:id="@+id/SignUpBTN"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
-        android:layout_marginBottom="66dp"
-        android:onClick="onClickSignUp"
-        android:text="SignUp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.763"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signInBTN" />
 </androidx.constraintlayout.widget.ConstraintLayout>
