@@ -34,4 +34,6 @@ public class Model {
     }
 
     // Add getter and setter methods for additional fields
+
 }
+
