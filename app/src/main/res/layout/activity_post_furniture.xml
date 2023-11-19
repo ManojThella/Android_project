@@ -2,9 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E2F1F3"
     android:padding="16dp">
 
-    <!-- Image View for Furniture Image -->
     <ImageView
         android:id="@+id/furnitureImageView"
         android:layout_width="match_parent"
@@ -12,22 +12,22 @@
         android:scaleType="centerCrop"
         android:src="@drawable/placeholder_image" />
 
-    <!-- Button to Pick Image -->
     <Button
         android:id="@+id/pickImageButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/furnitureImageView"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="10dp"
         android:onClick="onPickImageClick"
         android:text="Pick Image" />
 
-    <!-- Edit Text for Product Name -->
     <EditText
         android:id="@+id/productNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/pickImageButton"
+        android:background="#beeae4"
         android:layout_marginTop="8dp"
         android:hint="Product Name"
         android:padding="8dp" />
@@ -37,6 +37,7 @@
         android:id="@+id/descriptionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#beeae4"
         android:layout_below="@id/productNameEditText"
         android:layout_marginTop="8dp"
         android:hint="Description"
@@ -47,6 +48,7 @@
         android:id="@+id/conditionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#beeae4"
         android:layout_below="@id/descriptionEditText"
         android:layout_marginTop="8dp"
         android:hint="Condition"
@@ -57,6 +59,7 @@
         android:id="@+id/priceEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#beeae4"
         android:layout_below="@id/conditionEditText"
         android:layout_marginTop="8dp"
         android:hint="Price"
@@ -69,17 +72,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/priceEditText"
+        android:background="#beeae4"
         android:layout_marginTop="8dp"
         android:hint="Address"
         android:padding="8dp" />
 
-    <!-- Button to Post Furniture -->
     <Button
         android:id="@+id/postButton"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/addressEditText"
         android:layout_marginTop="8dp"
+        android:layout_marginStart="145dp"
         android:onClick="onPostButtonClick"
         android:text="Post" />
 

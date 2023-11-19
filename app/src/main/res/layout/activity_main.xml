@@ -1,74 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:background="#E2F1F3">
 
     <ImageView
-        android:layout_width="136dp"
-        android:layout_height="58dp"
-        android:layout_gravity="center"
-        android:contentDescription="App logo"
-        android:src="@drawable/logo" />
+        android:layout_width="214dp"
+        android:layout_height="181dp"
+        android:background="@drawable/bg_bubble" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to Furniture World"
-        android:textSize="24sp"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp" />
-
-    <EditText
-        android:id="@+id/fullNameET"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Full Name"
-        android:inputType="text"
-        android:padding="8dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
 
-    <EditText
-        android:id="@+id/emailET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email Address"
-        android:inputType="textEmailAddress"
-        android:padding="8dp"
-        android:layout_marginBottom="16dp" />
+        <ImageView
+            android:layout_width="136dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:contentDescription="logo"
+            android:src="@drawable/logo" />
 
-    <EditText
-        android:id="@+id/newPasswordET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="8dp"
-        android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="32dp"
+            android:text="Welcome to Furniture World"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
 
-    <EditText
-        android:id="@+id/confirmPasswordET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
-        android:padding="8dp"
-        android:layout_marginBottom="16dp" />
+        <EditText
+            android:id="@+id/fullNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#beeae4"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:padding="8dp" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:id="@+id/registerBTN" />
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#beeae4"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="8dp" />
 
-    <TextView
-        android:id="@+id/signInTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:text="Already have an account? Sign In" />
+        <EditText
+            android:id="@+id/newPasswordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#beeae4"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp" />
 
-</LinearLayout>
+        <EditText
+            android:id="@+id/confirmPasswordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#beeae4"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/registerBTN"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?" />
+
+            <TextView
+                android:id="@+id/signInTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Sign In"
+                android:textColor="#a790ef" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
