@@ -3,88 +3,206 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E2F1F3"
-    android:padding="16dp">
+    >
 
     <ImageView
-        android:id="@+id/furnitureImageView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/placeholder_image" />
+        android:layout_width="214dp"
+        android:layout_height="181dp"
+        android:background="@drawable/bg_bubble" />
 
-    <Button
-        android:id="@+id/pickImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/furnitureImageView"
-        android:layout_marginStart="145dp"
+    <!-- Product Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
-        android:onClick="onPickImageClick"
-        android:text="Pick Image" />
+        android:padding="16dp"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/productNameEditText"
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Post Furniture Details"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/pickImageButton"
-        android:background="#beeae4"
-        android:layout_marginTop="8dp"
-        android:hint="Product Name"
-        android:padding="8dp" />
+        android:layout_marginTop="108dp"
+        android:padding="16dp"
+        android:orientation="horizontal">
 
-    <!-- Edit Text for Description -->
-    <EditText
-        android:id="@+id/descriptionEditText"
+        <TextView
+            android:id="@+id/productNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Product Name: "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/productNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:hint="Enter Product Name"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Description -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#beeae4"
-        android:layout_below="@id/productNameEditText"
-        android:layout_marginTop="8dp"
-        android:hint="Description"
-        android:padding="8dp" />
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="168dp">
 
-    <!-- Edit Text for Condition -->
-    <EditText
-        android:id="@+id/conditionEditText"
+        <TextView
+            android:id="@+id/descriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Description: "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_bg"
+            android:layout_marginStart="27dp"
+            android:hint="Enter Description"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Condition -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#beeae4"
-        android:layout_below="@id/descriptionEditText"
-        android:layout_marginTop="8dp"
-        android:hint="Condition"
-        android:padding="8dp" />
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="218dp">
 
-    <!-- Edit Text for Price -->
-    <EditText
-        android:id="@+id/priceEditText"
+        <TextView
+            android:id="@+id/conditionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Condition: "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/conditionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:hint="Enter Condition"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Price -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#beeae4"
-        android:layout_below="@id/conditionEditText"
-        android:layout_marginTop="8dp"
-        android:hint="Price"
-        android:inputType="numberDecimal"
-        android:padding="8dp" />
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="268dp">
 
-    <!-- Edit Text for Address -->
-    <EditText
-        android:id="@+id/addressEditText"
+        <TextView
+            android:id="@+id/priceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Price: "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/priceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext_bg"
+            android:layout_marginStart="80dp"
+            android:hint="Enter Price"
+            android:inputType="numberDecimal"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- Address -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/priceEditText"
-        android:background="#beeae4"
-        android:layout_marginTop="8dp"
-        android:hint="Address"
-        android:padding="8dp" />
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="318dp">
+
+        <TextView
+            android:id="@+id/addressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Address: "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:hint="Enter Address"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="368dp">
+
+        <TextView
+            android:id="@+id/contactLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Contact : "
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/contactEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:inputType="numberDecimal"
+            android:hint="Enter Mobile Number"
+            android:padding="8dp" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/postButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/addressEditText"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="145dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="150dp"
         android:onClick="onPostButtonClick"
-        android:text="Post" />
+        android:text="Click to Post" />
 
 </RelativeLayout>
