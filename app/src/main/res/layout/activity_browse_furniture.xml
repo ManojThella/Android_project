@@ -1,23 +1,50 @@
-<!-- res/layout/activity_furniture_list.xml -->
-
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#E2F1F3">
+    <ImageView
+        android:layout_width="214dp"
+        android:layout_height="181dp"
+        android:background="@drawable/bg_bubble" />
 
-    <!-- RecyclerView to display the list of furniture items -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/addFurnitureButton" />
-
-    <!-- Button to add new furniture items -->
-    <Button
-        android:id="@+id/addFurnitureButton"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="Add Furniture" />
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="Browse Furniture Details"
+            android:textColor="@color/black"
+            android:textSize="34sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:clipToPadding="false"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
 </RelativeLayout>

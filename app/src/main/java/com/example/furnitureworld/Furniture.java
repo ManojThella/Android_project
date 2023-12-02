@@ -7,23 +7,20 @@ public class Furniture {
     private String condition;
     private String price;
     private String address;
+    private String contact;
 
-    // Default constructor (needed for Firebase)
     public Furniture() {
-        // Default constructor required for calls to DataSnapshot.getValue(Furniture.class)
     }
 
-    // Constructor
-    public Furniture(String userId, String productName, String description, String condition, String price, String address) {
+    public Furniture(String userId, String productName, String description, String condition, String price, String address, String contact) {
         this.userId = userId;
         this.productName = productName;
         this.description = description;
         this.condition = condition;
         this.price = price;
         this.address = address;
+        this.contact = contact;
     }
-
-    // Getters and setters (needed for Firebase)
 
     public String getUserId() {
         return userId;
@@ -71,5 +68,13 @@ public class Furniture {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getContact() {
+        return contact;
+    }
+
+    public void setContact(String contact) {
+        this.contact = contact;
     }
 }
