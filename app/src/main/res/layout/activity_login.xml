@@ -15,15 +15,16 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="32dp"
-        android:text="Welcome to Back"
-        android:textColor="@color/black"
-        android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="serif"
+            android:text="Welcome to Back"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
 
     <ImageView
         android:layout_width="266dp"
@@ -37,28 +38,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:background="#beeae4"
-            android:hint="Username"
-            android:inputType="text"
-            android:padding="8dp" />
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:fontFamily="serif"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
-    <EditText
-        android:id="@+id/passwordET"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:background="#beeae4"
-        android:layout_marginTop="10dp"
-        android:inputType="textPassword"
-        android:padding="8dp" />
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext_bg"
+            android:fontFamily="serif"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:textColorHint="@color/black" />
 
-    <Button
-        android:id="@+id/LoginBTN"
-        android:layout_gravity="center"
-        android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login" />
+        <Button
+            android:id="@+id/LoginBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:fontFamily="serif"
+            android:text="Login" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -69,15 +80,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account? " />
+                android:fontFamily="serif"
+                android:text="Don't have an account? "
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/registerTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:fontFamily="serif"
                 android:text="Register here"
-                android:textColor="#a790ef" />
+                android:textColor="#a790ef"
+                android:textSize="16sp" />
         </LinearLayout>
 
     </LinearLayout>

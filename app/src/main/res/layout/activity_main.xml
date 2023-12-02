@@ -29,6 +29,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="32dp"
+            android:fontFamily="serif"
             android:text="Welcome to Furniture World"
             android:textColor="@color/black"
             android:textSize="24sp" />
@@ -38,40 +39,56 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="#beeae4"
+            android:background="@drawable/rounded_edittext_bg"
+            android:fontFamily="serif"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:hint="Full Name"
             android:inputType="text"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/emailET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="#beeae4"
+            android:background="@drawable/rounded_edittext_bg"
+            android:fontFamily="serif"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:hint="Email Address"
             android:inputType="textEmailAddress"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/newPasswordET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="#beeae4"
+            android:background="@drawable/rounded_edittext_bg"
+            android:fontFamily="serif"
             android:hint="Password"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:inputType="textPassword"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/confirmPasswordET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:background="#beeae4"
+            android:background="@drawable/rounded_edittext_bg"
+            android:fontFamily="serif"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
             android:hint="Confirm Password"
             android:inputType="textPassword"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:textColorHint="@color/black" />
 
         <Button
             android:id="@+id/registerBTN"
@@ -89,15 +106,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already have an account?" />
+                android:fontFamily="serif"
+                android:text="Already have an account?"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/signInTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
+                android:fontFamily="serif"
                 android:text="Sign In"
-                android:textColor="#a790ef" />
+                android:textColor="#a790ef"
+                android:textSize="16sp" />
         </LinearLayout>
 
     </LinearLayout>
